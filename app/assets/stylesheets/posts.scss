@@ -9,4 +9,26 @@
   background-size: 130% 150%;
   position: abusolute;
   top:50vh;
+  .message5{
+    width: auto;
+    height: auto;
+    padding-top: 240px;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Noto Serif JP', sans-serif;
+    color: white;
+    }
+  .mainbotton{
+    text-align: center;
+    margin:  30px 480px;
+    font-size: 30px;
+    font-family: 'Noto Serif JP', sans-serif;
+    line-height: 60px;
+    border-radius: 20px;
+    background: #ff99ff;
+    a{
+      color: white!important;
+    }
+    
+  }
 }
