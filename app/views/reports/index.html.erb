@@ -16,12 +16,15 @@
   <%= audio_tag("paper.mp3",id:"audio2") %>
   <div class = 'blogarea'>
   <% @reports.each do |report| %>
+  
     <div class = 'textbox', id = <%= "box-#{report.id}" %> >
+    <% if user_signed_in? %>
       <%= link_to("/reports/#{report.id}/edit" ,method: :get ) do  %>
         <%= image_tag 'edit.png' , class: 'edit', id: report.id %>
       <% end %>
       <%= link_to("/reports/#{report.id}" ,method: :delete, id: report.id , class: 'del2') do  %>
         <%= image_tag 'del.png' , class: 'del' %>
+      <% end %>
       <% end %>
       <%= link_to("/reports/#{report.id}" ,method: :get ) do %>
         <div class = "report_list", onClick="sound()">
