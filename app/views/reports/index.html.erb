@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+  <div class = 'backimage'>
+    <div class = introduction-text>
+      <h2>ご覧いただいた皆様へ</h2>
+      <div class = 'ini-text'>
+          TEACH::EXPERTでプログラミングを受講しているエンジニアのブログです<br>
+          学んだこと、有益な情報をアウトプットを行なっていきます。<br>
+          お時間がよろしければご覧ください<br>
+      </div>
+    </div>
+  </div>
+  <%= audio_tag("error.wav",id:"audio") %>
+  <%= audio_tag("paper.mp3",id:"audio2") %>
+  <div class = 'blogarea'>
+  <% @reports.each do |report| %>
+    <div class = 'textbox', id = <%= "box-#{report.id}" %> >
+      <%= link_to("/reports/#{report.id}/edit" ,method: :get ) do  %>
+        <%= image_tag 'edit.png' , class: 'edit', id: report.id %>
+      <% end %>
+      <%= link_to("/reports/#{report.id}" ,method: :delete, id: report.id , class: 'del2') do  %>
+        <%= image_tag 'del.png' , class: 'del' %>
+      <% end %>
+      <%= link_to("/reports/#{report.id}" ,method: :get ) do %>
+        <div class = "report_list", onClick="sound()">
+        <span class = title><%= report.title %>
+          <%= simple_format(report.text) %>
+        </span>
+        </div>
+    </div>
+    <% end %>
+   <% end %>
+  </div>
+    <%= paginate(@reports) %>
+</body>

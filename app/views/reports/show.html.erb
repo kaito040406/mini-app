@@ -1,0 +1,42 @@
+<div class = "show-contens">
+  <div class = "maintitle">
+    <h2> <%= @report.title %> </h2>
+  </div>
+  <div class = "main-text">
+    <div class = "main-text-box">
+      <%= simple_format(@report.text) %>
+    </div>
+  </div>
+
+<div class = comment-box>
+  <div class = "comments">
+    <h4>＜コメント一覧＞</h4>
+    <% if @comments %>
+      <% @comments.each do |comment| %>
+        <div class = "usercommet" id = <%=comment.id%>>
+          <%= comment.nickname  %> : 
+          <%= comment.text %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+  <%= audio_tag("button.mp3",id:"audio3") %>
+  <div class = "comenter">
+    <%= form_for [@report, @comment], url: report_comments_path(@report)  do |form| %>
+    <div class = "name-form">
+      <%= form.label :nickname %>
+      <%= form.text_field :nickname ,class: 'textname'%>
+    </div>
+    <div class = "text-form">
+      <%= form.label :comment %>
+      <%= form.text_area :text ,class: 'textarea'%>
+    </div>
+      <%= audio_tag("error.wav",id:"audio") %>
+    <%= form.submit class: 'submitbottan'%>
+    <% end %>
+  </div>
+</div>
+
+
+

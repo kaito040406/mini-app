@@ -1,0 +1,12 @@
+<div class = "contents roe">
+  <div class = "container">
+    <%= form_tag("/reports/#{@report.id}", method: :patch) do %>
+      <h3>
+        編集する
+      </h3>
+      <input placeholder = "title" type = "string" name = "title">
+      <textarea placeholder = "text" name = "text" cols = "500" row = "10"><%= @report.text %></textarea>
+      <input type = "submit" value = "SENT">
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+.show-contens{
+  padding-top:50px;
+  .maintitle{
+    text-align: center;
+  }
+  .main-text{
+    margin: 20px 100px;
+  }
+}
+
+.comment-box{
+  margin: 20px 100px;
+  .comments{
+    .usercommet{
+      margin-top: 10px;
+      border: 1px solid #000000;
+      line-height: 25px;
+      padding: 0 10px;
+      border-radius: 8px;
+      background: white;
+    }
+  }
+  .comenter{
+    margin-top: 60px;
+    .name-form{
+      height: 30px;
+      width: 180px;
+      border-radius: 8px;
+      margin-bottom: 20px; 
+    }
+    .text-form{
+      .textarea{
+        height: 200px;
+        width: 100%;
+        border-radius: 8px;
+      }
+    }
+  }
+}

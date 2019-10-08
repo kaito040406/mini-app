@@ -1,0 +1,148 @@
+body{
+  
+  background: linear-gradient(-45deg, rgba(246, 255, 0, .8), rgba(255, 0, 161, .8)),url('back.jpg');
+  background-size: 130% 150%;
+}
+
+.h2{
+  text-align: center;
+}
+
+.myblog{
+  float: center;
+}
+
+.drawer-brand{
+  font-family: 'Sacramento', cursive;
+}
+
+header{
+  position: fixed;
+}
+
+.textbox{
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  background-color: beige;
+  color: black;
+  
+}
+
+.title{
+  margin-top: 30px;
+  color: black;
+}
+
+.introduction-text{
+  height: 200px;
+  width: 900px;
+  margin: 0 auto;
+  font-size: 20px;
+  color: beige;
+}
+
+.blogarea{
+  height:1000px;
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.textbox{
+  height: 300px;
+  width: 300px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 10px;
+  border-radius: 30px;
+  border-style: groove;
+}
+
+.backimage{
+  height: 240px;
+  width: 100%;
+  padding-top: 60px;
+
+}
+.report_list{
+  padding-top: 30px;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+
+}
+
+.ini-text{
+  font-size: 18px;
+  color: skyblue;
+  padding-left: 30px;
+}
+
+.drawer-navbar{
+  height: 60px !important;
+}
+.drawer-navbar-header{
+  height: 55px !important;
+}
+.drawer-container{
+  max-width: 100% !important;
+  height: 60px !important;
+  
+}
+
+.drawer-brand{
+  font-size: 3.0rem !important;
+  line-height: 5.0rem  !important;
+  padding-left: 50%;
+}
+
+.drawer-nav{
+  height: 200px !important;
+}
+
+.drawer-menu{
+  height: 60px !important;
+}
+
+.drawer-menu-item{
+  line-height: 60px !important;
+  font-size: 16px !important;
+}
+
+
+/* ここらかshowページ */
+
+.maintitle{
+  padding-top:30px;
+}
+
+.pagination {
+  bottom: 0;
+}
+
+.del{
+  height: 20px;
+  width: 20px;
+}
+
+
+.edit{
+  height: 20px;
+  width: 20px;
+  margin-left:80px;
+}
+
+@import "./show";
+@import "./posts";
+
+.bulue{
+  width: 200vh;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+
+
